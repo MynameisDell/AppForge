@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./Resources/AppIcon-1024.png" width="118" alt="AppForge icon" />
+  <img src="https://capsule-render.vercel.app/api?type=rounded&amp;height=130&amp;color=0:06141B,45:14D7D2,100:6C5CE7&amp;text=AF&amp;fontColor=FFFFFF&amp;fontSize=52&amp;fontAlignY=47&amp;desc=AppForge&amp;descSize=16&amp;descAlignY=75" width="190" alt="AppForge logo mark" />
 </p>
 
 <p align="center">
