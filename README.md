@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AppForge-1.0.0-14d7d2?style=for-the-badge" alt="AppForge version" />
+  <img src="https://img.shields.io/badge/AppForge-1.0.1-14d7d2?style=for-the-badge" alt="AppForge version" />
   <img src="https://img.shields.io/badge/Default%20UI-English-6c5ce7?style=for-the-badge" alt="Default UI English" />
   <img src="https://img.shields.io/badge/Vietnamese-selectable-ef4444?style=for-the-badge" alt="Vietnamese selectable" />
   <img src="https://img.shields.io/badge/GUI-first-0f172a?style=for-the-badge" alt="GUI first" />
@@ -39,6 +39,16 @@
 </p>
 
 ---
+
+## Important IPA Installation Notice
+
+<strong><em>AppForge's IPA installation workflow is different from the normal installation method used by TrollStore and sideload signing tools such as Esign, Feather, and similar signers.</em></strong>
+
+<strong><em>At this stage, AppForge can use its installation workflow to place many IPA packages on device, including encrypted App Store IPA files. The main purpose of this path is to make the app bundle available for AppForge's decrypt workflow. It is not intended to make the installed app launch and run like a normally signed, TrollStore-installed, or sideload-signed application.</em></strong>
+
+<strong><em>Because of that, an IPA installed through AppForge may crash when opened from the Home Screen, especially when the package is still encrypted or was installed only as a temporary decrypt target. This behavior does not mean the decrypt workflow has failed. It means the AppForge install path should be treated as a preparation step for decrypting the IPA, not as the final method for daily app use.</em></strong>
+
+<strong><em>After AppForge finishes decrypting and exporting the decrypted IPA, install the exported IPA again through a normal method: sign and sideload it with a signing tool, or install it through TrollStore when the device and iOS version support TrollStore.</em></strong>
 
 ## 🎯 Product Focus
 
