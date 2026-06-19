@@ -14,6 +14,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/AppForge-1.0.1-14d7d2?style=for-the-badge" alt="AppForge version" />
+  <a href="https://github.com/MynameisDell/AppForge/stargazers">
+    <img src="https://img.shields.io/github/stars/MynameisDell/AppForge?style=for-the-badge&amp;logo=github&amp;color=f59e0b" alt="GitHub stars" />
+  </a>
   <img src="https://img.shields.io/badge/Default%20UI-English-6c5ce7?style=for-the-badge" alt="Default UI English" />
   <img src="https://img.shields.io/badge/Vietnamese-selectable-ef4444?style=for-the-badge" alt="Vietnamese selectable" />
   <img src="https://img.shields.io/badge/GUI-first-0f172a?style=for-the-badge" alt="GUI first" />
@@ -69,6 +72,11 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
 - Platform browsing for iPhone, iPad, Mac, Watch, TV, and Vision categories.
 - App detail page with metadata, screenshots, previews, ratings, version data, purchase, download, and direct install actions.
 - Version browser with External Version ID search, copy action, latest badge, App Store date, and IPA date.
+- GUI Downgrade from App Detail with a numbered version index, External Version ID search/copy, compact confirmation, and exact-version dispatch.
+- Manual Direct Install from Library using either Bundle ID or Track ID, with lightweight Store target resolution and no unnecessary version-history scan.
+- Manual Downgrade from Library using Bundle ID or Track ID, complete version intelligence, and an exact External Version ID lock.
+- Automatic account-license preparation before Direct Install or Downgrade, including the existing purchase path for apps that are not yet owned.
+- Owned-item fallback paths for previously purchased apps when public catalog metadata is unavailable, including delisted or storefront-restricted items when Apple still permits redownload.
 - Download current or older app versions, then install and decrypt that exact package.
 - Download and decrypt older versions for any available App Store app your account can access.
 - Manual IPA download from Bundle ID, Track ID, External Version ID, or direct IPA URL.
@@ -143,7 +151,7 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
       <br />
       <b>Settings</b>
       <br />
-      Account, token, search limit, region, language selector, Direct Install roadmap, themes, icons, and UDID.
+      Account, token, search limit, region, language selector, root Direct Install compatibility controls, themes, icons, and UDID.
     </td>
   </tr>
 </table>
@@ -171,7 +179,7 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
       <br />
       <b>App Detail</b>
       <br />
-      Screenshots, description, release notes, Download, Versions, Purchase, and Direct Install actions in one page.
+      Screenshots, description, release notes, Download, Versions, Downgrade, Purchase, and Direct Install actions in one page.
     </td>
   </tr>
   <tr>
@@ -195,6 +203,41 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
       <b>Media Export</b>
       <br />
       Browse screenshots and previews, save all media, save to Photos, or share selected images.
+    </td>
+  </tr>
+</table>
+
+### Direct Install And Downgrade
+
+<table>
+  <tr>
+    <td width="25%" align="center">
+      <img src="./Preview/preview19.png" alt="Numbered downgrade version browser" width="200" />
+      <br />
+      <b>Version Intelligence</b>
+      <br />
+      Browse a numbered version index, search by display version or External Version ID, inspect Store/IPA dates, and copy an ID directly.
+    </td>
+    <td width="25%" align="center">
+      <img src="./Preview/preview20.png" alt="Compact downgrade confirmation" width="200" />
+      <br />
+      <b>Downgrade Confirmation</b>
+      <br />
+      Confirm the exact target version and External Version ID from a compact action sheet before dispatching the downgrade.
+    </td>
+    <td width="25%" align="center">
+      <img src="./Preview/preview21.png" alt="Manual root Direct Install" width="200" />
+      <br />
+      <b>Manual Direct Install</b>
+      <br />
+      Resolve a Bundle ID or Track ID and send the latest-version request through AppForge's bundled root App Store bridge.
+    </td>
+    <td width="25%" align="center">
+      <img src="./Preview/preview22.png" alt="Manual precision Downgrade" width="200" />
+      <br />
+      <b>Manual Downgrade</b>
+      <br />
+      Resolve Store metadata and historical versions, then select or enter the exact External Version ID to install.
     </td>
   </tr>
 </table>
@@ -292,14 +335,16 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
 - Action Center includes:
   - Download.
   - Versions.
+  - Downgrade.
   - Purchase.
   - Direct Install.
 - Download action includes realtime progress, percentage, size labels, progress bar, pause/resume, and cancel controls.
 - Purchase action obtains an App Store license when the account session is valid.
 - Versions action scans External Version IDs, release dates, IPA dates, latest badge, copy action, and version-specific download action.
 - Older versions can be selected by External Version ID, downloaded as IPA, installed locally, and decrypted after install.
-- Direct Install action uses the AppForge compatibility bridge workflow for on-device install handoff.
-- GUI Direct Install `--buff` integration is planned for an upcoming release.
+- Downgrade opens the complete historical version index, supports search/copy for External Version IDs, and dispatches the selected version through the root App Store bridge.
+- Direct Install prepares the account license when required, then uses the AppForge compatibility bridge for an on-device App Store daemon handoff.
+- GUI Direct Install `--buff` is integrated and uses the bundled AppForgeRootHelper carrier when enabled in Settings.
 
 ### Library
 
@@ -323,6 +368,16 @@ The GUI is the primary experience. The `ipatool-ios` CLI capability set is docum
   - Share package.
   - Delete package.
 - Clear all library packages.
+- Manual Store Lab provides two dedicated root Store workflows:
+  - Direct Install by Bundle ID or Track ID.
+  - Downgrade by Bundle ID or Track ID.
+  - Paste action for identifiers.
+  - Store target intelligence for resolved Bundle ID and Track ID.
+  - Lightweight Direct Install resolution without fetching historical versions.
+  - Full Downgrade version discovery with display versions, External Version IDs, Store dates, and IPA dates.
+  - Numbered version rows, version/ID search, one-tap External Version ID copy, latest marker, and manual exact-ID entry.
+  - Account-license preparation before the Store daemon transaction.
+  - Root-helper dispatch, LaunchServices monitoring, and owned-item IPA fallback when the Store request does not materialize.
 - Manual Download Sheet supports:
   - Bundle Identifier.
   - Track ID.
@@ -344,6 +399,39 @@ This workflow is useful for:
 - Decrypting a historical app build for compatibility testing, preservation, or analysis.
 - Installing an app that declares a higher iOS requirement, then using the decrypt workflow after the app is available on device.
 - Repeating the same flow from GUI or CLI with the same Bundle ID, Track ID, and External Version ID model.
+
+### GUI Direct Install
+
+Direct Install is available from both App Detail and Library. App Detail already contains the resolved Store item, while Library's Manual Direct Install accepts a Bundle ID or numeric Track ID.
+
+The GUI workflow:
+
+1. Resolves the Store target and validates the Bundle ID/Track ID pair.
+2. Uses a lightweight lookup for Manual Direct Install instead of downloading the historical version index.
+3. Prepares the current Apple account license when the item is not already owned and the Store permits acquisition.
+4. Sends the request to AppForgeRootHelper, which dispatches the transaction through `appstored`/`itunesstored` with the active compatibility profile.
+5. Watches LaunchServices for the placeholder and final installed application.
+6. Uses the owned-item redownload/download fallback when the daemon accepts a request but does not materialize the installation.
+
+For an app removed from public App Store search, enter its numeric Track ID. Previously purchased items can use the authenticated owned-item route when Apple still exposes a valid redownload asset for that account.
+
+### GUI Downgrade
+
+Downgrade is available from App Detail and as Manual Downgrade in Library. It uses the same root Store carrier as Direct Install but locks the request to one exact External Version ID.
+
+The Downgrade workflow includes:
+
+- Historical version discovery from authenticated Store metadata.
+- A numbered, searchable list of display versions and External Version IDs.
+- App Store release date and IPA date when available.
+- One-tap External Version ID copy and manual numeric ID entry.
+- Compact confirmation showing the selected target version and ID.
+- License preparation before dispatch.
+- Exact-version fields applied across Store metadata, offer data, buy parameters, and root-helper payloads.
+- LaunchServices monitoring for the target installed version.
+- Owned-item IPA fallback for delisted or storefront-restricted applications when Apple still authorizes the account's historical download.
+
+Downgrade availability ultimately depends on the signed-in Apple account owning or being allowed to acquire the item and Apple continuing to serve the selected historical asset.
 
 ### Install Process
 
@@ -447,8 +535,8 @@ When Filza or its URL handler is unavailable, AppForge copies the path so the us
 - Search Limit slider.
 - Search Region picker.
 - Languages picker with English, Tiếng Việt, Korean, Simplified Chinese, Japanese, and French options.
-- Direct Install `--buff` GUI preparation panel.
-- Direct Install bridge profile status for upcoming GUI `--buff` support.
+- Direct Install `--buff` enable/disable control for GUI root Store actions.
+- Live bridge profile status for Store, variant, update, and installd compatibility hooks.
 - Profile picture from camera or photo library.
 - Interface Theme picker with polished presets:
   - Forge Spectrum.
@@ -492,11 +580,11 @@ Supported interface languages:
 
 Language changes are available from Settings and apply to the interface without requiring a full app reinstall.
 
-## 🚀 Direct Install And High-iOS Compatibility
+## 🚀 Direct Install, Downgrade And High-iOS Compatibility
 
-Direct Install is one of AppForge's most important workflows. It targets the situation where a user wants to install an App Store app directly on device, including cases where the App Store metadata says the app requires a newer iOS version than the current device.
+Direct Install and Downgrade are integrated GUI workflows. They target on-device App Store installation, exact historical-version replacement, and cases where App Store metadata declares a newer iOS requirement than the current device.
 
-The CLI `--buff` compatibility workflow is designed around a high-iOS profile:
+The GUI and CLI `--buff` compatibility workflow is designed around a high-iOS profile:
 
 - Applies an iOS 99.0.0 compatibility profile.
 - Rewrites relevant User-Agent paths when needed.
@@ -505,6 +593,10 @@ The CLI `--buff` compatibility workflow is designed around a high-iOS profile:
 - Enables Store update/install compatibility flags.
 - Uses device/profile coverage for iPhone and iPad flows.
 - Supports fallback and recovery paths for difficult App Store responses.
+- Dispatches GUI transactions through the bundled AppForgeRootHelper.
+- Preserves an exact External Version ID throughout the Downgrade request.
+- Performs account-license preparation before daemon redownload requests.
+- Avoids the expensive historical-version scan for Manual Direct Install.
 
 This workflow is especially useful for:
 
@@ -514,7 +606,7 @@ This workflow is especially useful for:
 - Direct install handoff where the normal App Store route is too restrictive.
 - Install-and-decrypt flows where the app is installed, decrypted, then optionally uninstalled.
 
-GUI Direct Install `--buff` support is planned for an upcoming AppForge release, bringing this high-iOS compatibility flow into the visual app interface.
+Enable Direct Install `--buff` in Settings before using the GUI root Store actions. Direct Install and Downgrade then share the same compatibility configuration, root carrier, progress reporting, and completion monitoring.
 
 ## 🧬 Platform Coverage
 
@@ -637,7 +729,6 @@ Some workflows require elevated permissions, jailbreak support, or a compatible 
 ## 🧭 Coming Soon
 
 - macOS decrypt workflow for supported macOS app packages.
-- GUI Direct Install `--buff` activation, bringing high-iOS compatibility handling directly into the AppForge visual workflow.
 - More guided compatibility states for difficult App Store responses and version-specific install paths.
 
 ## 📄 License
@@ -649,7 +740,11 @@ Redistribution, repackaging, resale, or rebranding requires permission from the 
 ## ⭐ Star History
 
 <p align="center">
-  <a href="https://star-history.com/#Dell/AppForge&amp;Date">
-    <img src="https://api.star-history.com/svg?repos=Dell/AppForge&amp;type=Date&amp;theme=dark" alt="Star History Chart" />
+  <a href="https://star-history.com/#MynameisDell/AppForge&amp;Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date" />
+      <img src="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" alt="Star History Chart for MynameisDell/AppForge" />
+    </picture>
   </a>
 </p>
