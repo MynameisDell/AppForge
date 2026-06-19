@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AppForge-1.0.1-14d7d2?style=for-the-badge" alt="AppForge version" />
+  <img src="https://img.shields.io/badge/AppForge-1.0.2-14d7d2?style=for-the-badge" alt="AppForge version" />
   <a href="https://github.com/MynameisDell/AppForge/stargazers">
     <img src="https://img.shields.io/github/stars/MynameisDell/AppForge?style=for-the-badge&amp;logo=github&amp;color=f59e0b" alt="GitHub stars" />
   </a>
