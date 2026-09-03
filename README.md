@@ -740,11 +740,15 @@ Redistribution, repackaging, resale, or rebranding requires permission from the 
 ## ⭐ Star History
 
 <p align="center">
-  <a href="https://star-history.com/#MynameisDell/AppForge&amp;Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date" />
-      <img src="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" alt="Star History Chart for MynameisDell/AppForge" />
-    </picture>
+  <img src="https://img.shields.io/github/stars/MynameisDell/AppForge?style=for-the-badge&amp;logo=github&amp;color=f59e0b" alt="GitHub stars" />
+  <a href="https://github.com/MynameisDell/AppForge/network/members">
+    <img src="https://img.shields.io/github/forks/MynameisDell/AppForge?style=for-the-badge&amp;logo=github&amp;color=14d7d2" alt="GitHub forks" />
   </a>
+  <a href="https://github.com/MynameisDell/AppForge/watchers">
+    <img src="https://img.shields.io/github/watchers/MynameisDell/AppForge?style=for-the-badge&amp;logo=github&amp;color=6c5ce7" alt="GitHub watchers" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Want the animated star-growth chart? As of June 30, 2026 GitHub restricts read access to stargazer data to a repo's own admins and collaborators, so a live chart can only be embedded by the repo owner with an access token. View the chart on <a href="https://star-history.com/#MynameisDell/AppForge&amp;Date">star-history.com</a>.</em>
 </p>
