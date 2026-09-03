@@ -739,12 +739,10 @@ Redistribution, repackaging, resale, or rebranding requires permission from the 
 
 ## ⭐ Star History
 
-<p align="center">
-  <a href="https://star-history.com/#MynameisDell/AppForge&amp;Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date" />
-      <img src="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" alt="Star History Chart for MynameisDell/AppForge" />
-    </picture>
-  </a>
-</p>
+<a href="https://www.star-history.com/?repos=MynameisDell%2FAppForge&type=timeline&logscale=&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MynameisDell/AppForge&type=timeline&theme=dark&logscale&legend=top-left&sealed_token=GtnFiBoH1t2VcgroZsbyKLabklyCtbp6WHVdIXMZSAr7l9eN6vmnH9up6JzrKPvs_kLTmbGEwLSRkPsTqe9tV1gTdOx_2nuQ0XE7JePUfgLwiq0b1Q6LBVp9CdPLJDn8oSUGyLfXHDXg-yCLyyPfabS016l2C7KNKPY95oUkAcXRGdtTEjXxeKiK-0KJrxHeOXaSY7DhXZYLAFzZb6_-kLQdIiTDM1Usz04DRlII3BxeLuiGbh92AA5SR5C__48Ix9euVDoX8VAXkFK6wZU8sqTEON2c5K9qnRaup-kW-w9JtRH55zFyM3GGOLgZIAixdrNPq-I8AgQPg220CPZHEDSyPoVQO6rFYqSJE6Tpkcmzd4XUYeJGOFondhPofuODA2RNYihNSR8tLVT7FR_O-yRh2aEO_gTXs7Ot-UTkGwnVn_WlwC9DWQAGU05s4VnJT7BpzKmXzay4OqAWQbXTIbb5cX8Uzg7KAy2zLpiZePFjuXMUqzJKLnd8BWRYAmU6dH_SgJuXjr6ZCzcKSW_FWCie_3z2pO33myUT9VqWnTI1z40RqtMflt6Jjd9GVV_VFVABIi6TQOEQD3UadkOHGFg8H0l7bzJ4blnjh1YLABGHpre8-IkFx0hYz8j9FKupsYvZ0bNCl_-VtqOz7aKeqTbJ_8uI5Xb4pRUFlqPUz8kqJ9-afJNxBVPwzap7iAzIzlZy-3zcyB-s1r0O2S2K0O6oks5nt193_sRxwoe7IXNWFZkroleuav-RtmUGDjzcHBfKZgMiPpuWUDmMyEWnPiUPrPET3kxPHf4lMFPPOVhWP88VNYJ15y9lVcd3HfiiDcZjDWzY" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MynameisDell/AppForge&type=timeline&logscale&legend=top-left&sealed_token=GtnFiBoH1t2VcgroZsbyKLabklyCtbp6WHVdIXMZSAr7l9eN6vmnH9up6JzrKPvs_kLTmbGEwLSRkPsTqe9tV1gTdOx_2nuQ0XE7JePUfgLwiq0b1Q6LBVp9CdPLJDn8oSUGyLfXHDXg-yCLyyPfabS016l2C7KNKPY95oUkAcXRGdtTEjXxeKiK-0KJrxHeOXaSY7DhXZYLAFzZb6_-kLQdIiTDM1Usz04DRlII3BxeLuiGbh92AA5SR5C__48Ix9euVDoX8VAXkFK6wZU8sqTEON2c5K9qnRaup-kW-w9JtRH55zFyM3GGOLgZIAixdrNPq-I8AgQPg220CPZHEDSyPoVQO6rFYqSJE6Tpkcmzd4XUYeJGOFondhPofuODA2RNYihNSR8tLVT7FR_O-yRh2aEO_gTXs7Ot-UTkGwnVn_WlwC9DWQAGU05s4VnJT7BpzKmXzay4OqAWQbXTIbb5cX8Uzg7KAy2zLpiZePFjuXMUqzJKLnd8BWRYAmU6dH_SgJuXjr6ZCzcKSW_FWCie_3z2pO33myUT9VqWnTI1z40RqtMflt6Jjd9GVV_VFVABIi6TQOEQD3UadkOHGFg8H0l7bzJ4blnjh1YLABGHpre8-IkFx0hYz8j9FKupsYvZ0bNCl_-VtqOz7aKeqTbJ_8uI5Xb4pRUFlqPUz8kqJ9-afJNxBVPwzap7iAzIzlZy-3zcyB-s1r0O2S2K0O6oks5nt193_sRxwoe7IXNWFZkroleuav-RtmUGDjzcHBfKZgMiPpuWUDmMyEWnPiUPrPET3kxPHf4lMFPPOVhWP88VNYJ15y9lVcd3HfiiDcZjDWzY" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MynameisDell/AppForge&type=timeline&logscale&legend=top-left&sealed_token=GtnFiBoH1t2VcgroZsbyKLabklyCtbp6WHVdIXMZSAr7l9eN6vmnH9up6JzrKPvs_kLTmbGEwLSRkPsTqe9tV1gTdOx_2nuQ0XE7JePUfgLwiq0b1Q6LBVp9CdPLJDn8oSUGyLfXHDXg-yCLyyPfabS016l2C7KNKPY95oUkAcXRGdtTEjXxeKiK-0KJrxHeOXaSY7DhXZYLAFzZb6_-kLQdIiTDM1Usz04DRlII3BxeLuiGbh92AA5SR5C__48Ix9euVDoX8VAXkFK6wZU8sqTEON2c5K9qnRaup-kW-w9JtRH55zFyM3GGOLgZIAixdrNPq-I8AgQPg220CPZHEDSyPoVQO6rFYqSJE6Tpkcmzd4XUYeJGOFondhPofuODA2RNYihNSR8tLVT7FR_O-yRh2aEO_gTXs7Ot-UTkGwnVn_WlwC9DWQAGU05s4VnJT7BpzKmXzay4OqAWQbXTIbb5cX8Uzg7KAy2zLpiZePFjuXMUqzJKLnd8BWRYAmU6dH_SgJuXjr6ZCzcKSW_FWCie_3z2pO33myUT9VqWnTI1z40RqtMflt6Jjd9GVV_VFVABIi6TQOEQD3UadkOHGFg8H0l7bzJ4blnjh1YLABGHpre8-IkFx0hYz8j9FKupsYvZ0bNCl_-VtqOz7aKeqTbJ_8uI5Xb4pRUFlqPUz8kqJ9-afJNxBVPwzap7iAzIzlZy-3zcyB-s1r0O2S2K0O6oks5nt193_sRxwoe7IXNWFZkroleuav-RtmUGDjzcHBfKZgMiPpuWUDmMyEWnPiUPrPET3kxPHf4lMFPPOVhWP88VNYJ15y9lVcd3HfiiDcZjDWzY" />
+ </picture>
+</a>
