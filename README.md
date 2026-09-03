@@ -739,10 +739,12 @@ Redistribution, repackaging, resale, or rebranding requires permission from the 
 
 ## ⭐ Star History
 
-<a href="https://www.star-history.com/?repos=MynameisDell%2FAppForge%2CAppForge%2FAppForge&type=timeline&logscale=&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MynameisDell/AppForge%2CAppForge/AppForge&type=timeline&theme=dark&logscale&legend=top-left&sealed_token=9ShWBsrmPlZYXp2LprvVMftcc31pqm2MyuGGh6aBM1IgmJPNQIX7LNzbF-zkemDf2wW3zzrpG1t-fJW8zyEMIvcg7ze2xvgQjbQI1Qwibca8dU-xz93wyzKy3U4vNsm6akHOI_jjarimQrG3swXM0CwU_aeg0SzuDhgchTUj3LO2340z_HepbG-gdjIf" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MynameisDell/AppForge%2CAppForge/AppForge&type=timeline&logscale&legend=top-left&sealed_token=9ShWBsrmPlZYXp2LprvVMftcc31pqm2MyuGGh6aBM1IgmJPNQIX7LNzbF-zkemDf2wW3zzrpG1t-fJW8zyEMIvcg7ze2xvgQjbQI1Qwibca8dU-xz93wyzKy3U4vNsm6akHOI_jjarimQrG3swXM0CwU_aeg0SzuDhgchTUj3LO2340z_HepbG-gdjIf" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MynameisDell/AppForge%2CAppForge/AppForge&type=timeline&logscale&legend=top-left&sealed_token=9ShWBsrmPlZYXp2LprvVMftcc31pqm2MyuGGh6aBM1IgmJPNQIX7LNzbF-zkemDf2wW3zzrpG1t-fJW8zyEMIvcg7ze2xvgQjbQI1Qwibca8dU-xz93wyzKy3U4vNsm6akHOI_jjarimQrG3swXM0CwU_aeg0SzuDhgchTUj3LO2340z_HepbG-gdjIf" />
- </picture>
-</a>
+<p align="center">
+  <a href="https://star-history.com/#MynameisDell/AppForge&amp;Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date" />
+      <img src="https://api.star-history.com/svg?repos=MynameisDell/AppForge&amp;type=Date&amp;theme=dark" alt="Star History Chart for MynameisDell/AppForge" />
+    </picture>
+  </a>
+</p>
